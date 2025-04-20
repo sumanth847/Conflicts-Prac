@@ -50,7 +50,8 @@ def is_full(board):
             return False
     return True
 
-def sudoku_game():
+def board_game():
+
     print("Welcome to Sudoku!")
     while not is_full(sudoku_board):
         print_sudo_board(sudoku_board)
