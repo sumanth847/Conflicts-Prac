@@ -74,4 +74,4 @@ def board_game():
     print("Congratulations! You've completed the Sudoku puzzle.")
 
 if __name__ == "__main__":
-    sudoku_game()
+    board_game()
