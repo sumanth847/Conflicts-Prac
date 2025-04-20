@@ -13,7 +13,7 @@ sudoku_board = [
     [0, 0, 0, 0, 8, 0, 0, 7, 9]
 ]
 
-def print_board(board):
+def print_sudo_board(board):
     for i in range(9):
         if i % 3 == 0 and i != 0:
             print("-" * 21)
@@ -53,7 +53,7 @@ def is_full(board):
 def sudoku_game():
     print("Welcome to Sudoku!")
     while not is_full(sudoku_board):
-        print_board(sudoku_board)
+        print_sudo_board(sudoku_board)
         try:
             row = int(input("Enter row (0-8): "))
             col = int(input("Enter col (0-8): "))
@@ -69,7 +69,7 @@ def sudoku_game():
             print("Please enter valid numbers.")
         except IndexError:
             print("Row and column must be between 0 and 8.")
-    print_board(sudoku_board)
+    print_sudo_board(sudoku_board)
     print("Congratulations! You've completed the Sudoku puzzle.")
 
 if __name__ == "__main__":
